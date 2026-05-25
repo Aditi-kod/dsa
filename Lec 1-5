@@ -1,0 +1,324 @@
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     char ch;
+//     cout<<"Enter your character"<<endl;
+//     cin>>ch;
+//     if(ch>='a'&& ch<='z'){
+//         cout<<"This is lowercase"<<endl;
+//     }
+//     else if(ch>='A'&& ch<='Z'){
+//         cout<<"This is uppercase"<<endl;
+//     }
+//     else if(ch>='0'&& ch<='9'){
+//         cout<<"This is numeric"<<endl;
+//     }
+//     else{
+//         cout<< "This is a symbol"<<endl;
+//     }
+//     return 0;
+// }
+// #include <iostream>
+// using namespace std;
+
+// int ev_sum(int n)
+// {
+//     int sum = 0;
+//     for (int i = 1; i <= n; i++)
+//     {
+//         sum = sum + i * 2;
+//     }
+//     return sum;
+// }
+// int main()
+// {
+//     int x;
+//     cout<<"Enter the number of 1st even numbers"<<endl;
+//     cin >> x;
+//     cout << "sum of 1st " << x << " even numbers is " << ev_sum(x) << endl;
+
+//     return 0;
+// }
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     double t_in_C;
+//     cout << "Enter temperature in celsius" << endl;
+//     cin >> t_in_C;
+//     cout << "the temperature in farenheit is " << t_in_C * 9 / 5 + 32 << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin >> n;
+//     bool isPrime = true;
+
+//     if (n < 2)
+//         isPrime = false;
+//     for (int i = 2; i < n; i++)
+//     {
+//         if (n % i == 0)
+//         {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+//     if (isPrime)
+//         cout << "this is a prime  number";
+//     else
+//         cout<<"this is not a prime number";
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//    cin >> n;
+// for (int i = 1; i <= n; i++)
+// {
+//     for (int j = 1; j <= n; j++)
+//     {
+//         cout<<"*";
+//     }
+//     cout<<endl;
+// }
+// for (int i = 1; i <= n; i++)
+// {
+//     for (int j = 1; j<=n-i+1; j++)
+//     {
+//         cout << i;
+//     }
+//     cout << endl;
+// }
+// for (int i = 1; i <= n; i++)
+// {
+//     for (int j = 1; j <= n; j++)
+//     {
+//         cout<<j;
+//     }
+//     cout<<endl;
+
+// }
+// for (int i = 1; i <= n; i++)
+// {
+//     for (int j = n; j >=1;  j--)
+//     {
+//         cout<<j;
+//     }
+//     cout<<endl;
+
+// }
+//     for (int i = 1; i <= n; i++)
+//     {
+//         for (int j = n; j <=n-i+1;  j++)
+//         {
+//             cout<<j;
+//         }
+//         cout<<endl;
+
+//     }
+// for (int i = 0; i < n; i++)
+// {
+//    for (int j = 0; j <= i ; j++)
+//    {
+//     cout<<"*";
+//    }
+//    cout<<endl;
+// }
+//     return 0;
+// }
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     int n;
+//     cin>>n;
+//     int count = 1;
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int  j = 1; j < n; j++)
+//         {
+//             cout<<count<<" ";
+//             count++;
+//         }
+
+//         cout<<endl;
+//     }
+//  return 0;
+// }
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     int n;
+//     cin>>n;
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int  j = 0; j <= i; j++)
+//         {
+//             cout<<"*";
+
+//         }
+
+//         cout<<endl;
+//     }
+//  return 0;
+// }
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     int n;
+//     cin>>n;
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int  j = 0; j <= i; j++)
+//         {
+//             cout<<"*";
+
+//         }
+
+//         cout<<endl;
+//     }
+//  return 0;
+// }
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int a = 4;
+//     int b = 6;
+//     cout << (a & b) << endl;
+//     cout << (a | b) << endl;
+//     cout << (~a) << endl;
+//     cout << (a ^ b) << endl;
+//     cout << a++ << endl; // output = 4   a= 5
+//     cout << ++a << endl; // a=6  output = 6
+//     cout << a-- << endl; // output = 6   a= 5
+//     cout << --a << endl; // a=4  ouput = 4
+//     return 0;
+// }
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int a, b=1;
+//     a =10;
+//     if(++a) cout<<b;
+//     else cout<< ++b;  // output = 1
+//     return 0;
+// }
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int a=1, b=2;
+//     if(a-- >0 && ++b>2) cout<< "stage 1 inside if"<<endl;
+//     else cout<< " stage 2 inside else"<<endl;  // output = stage 1 inside if 0 3
+//     cout<<a<<" "<<b;
+//     return 0;
+// }
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int a=1, b=2;
+//     if(a-- >0 || ++b>2) cout<< "stage 1 inside if"<<endl;
+//     else cout<< " stage 2 inside else"<<endl;  // output = stage 1 inside if 0 3
+//     cout<<a<<" "<<b;
+//     return 0;
+// }
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int a=3;
+//     cout<<(25* ++a);
+// // }
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int a=1;
+//     int b = a++;   // output = 1 3
+//     int c = ++a;
+//     cout<<b<<" "<<c;
+//     return 0;
+// }
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     for(int a =1, b =2, c=3;a>0 && b>1 && c>2; a-- && b-- && c--){
+//         cout<<a<<" "<<b<<" "<<c<<endl;
+//     }
+//     return 0;
+// }
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin >> n;
+//     int sum = 0;
+//     for (int i = 0; i <= n; i++)
+//     {
+//         sum = sum + i;
+//     }
+//     cout << sum;
+
+//     return 0;
+// }
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int a =0;
+//     int b =1;
+//     int n;
+//     cin>>n;
+//     cout<<a<<" "<<b<<" ";
+
+//     for (int i = 2; i < n; i++)
+//     {
+//         int nextnumber = a+b;
+        
+//         cout<<nextnumber<<" ";
+//         a=b;
+//         b = nextnumber;
+//     }
+//     return 0;
+// }
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     int n;
+//     cin>>n;
+//     bool isprime = true;
+//     if (n<0) {
+//         cout<<"put a whole number";
+//         return 0;
+//     }
+//     if (n==0 ||n==1)
+//     {
+//         isprime = false;
+//     }
+//     else{
+//     for (int i = 2; i < n; i++)
+//     {
+//         if (n%i == 0)
+//         {
+//             isprime = false;
+//             break;
+//         }
+                
+//     }
+// }
+//     if(isprime) cout<<"this is a prime number";
+//     else cout<<"this is not a prime number";
+//     return 0;
+// }
