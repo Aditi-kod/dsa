@@ -1,0 +1,75 @@
+#include <iostream>
+using namespace std;
+int main() {
+    for (int i = 0; i <= 5; i++)
+    {
+        cout<<i<<" ";
+        i++;
+    }                                // output = 0 2 4
+
+    return 0;
+}
+#include <iostream>
+using namespace std;
+int main() {
+    for (int i = 0; i <= 15; i+=2)
+    {
+        cout<<i<<" ";
+        if (i && 1)
+        {
+           continue;
+        }                   // output = 0 3 5 7 9 11 13 15
+        i++;
+    }
+
+    return 0;
+}
+#include <iostream>
+using namespace std;
+int main() {
+    for (int i = 0; i <5; i++)
+    {
+        for (int j = i; j <=5; j++)
+        {
+            cout<<i<<j<<"  ";
+        }
+    }
+    return 0;
+}
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b;
+    char op;
+    cout << "Enter the value of first number" << endl;
+    cin >> a;
+    cout << "Enter the value of first number" << endl;
+    cin >> b;
+    cout << "Enter the operation to perform" << endl;
+    cin >> op;
+    switch (op)
+    {
+    case '+':
+        cout<< a + b;
+        break;
+    case '-':
+        cout<< a - b;
+        break;
+    case '*':
+        cout<< a * b;
+        break;
+    case '/':
+        cout<< a / b;
+        break;
+    case '%':
+        cout<< a % b;
+        break;
+
+    default:
+    cout<<"i dont know this operation"<<endl;
+        break;
+    }
+
+    return 0;
+}
