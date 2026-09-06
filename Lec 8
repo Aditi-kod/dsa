@@ -1,0 +1,56 @@
+// HW Q1
+#include <iostream>
+using namespace std;
+int main() {
+    while (true)
+    {
+        cout<<"hello"<<endl;
+
+        int num = 1;
+        switch (num)
+        {
+        case 1:
+            cout<<"hi";
+            break;
+        }
+        exit(0);
+    }
+    
+    return 0;
+}
+
+// HW Q2
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a,b;
+    char op;
+    cout<<"enter 1st number and 2nd number"<<endl;
+    cin>>a>>b;
+    cout<<"enter operation to perform"<<endl;
+    cin>>op;
+    switch (op)
+    {
+    case '+':
+        cout<<a+b<<endl;
+        break;
+        case '-':
+        cout<<a-b<<endl;
+        break;
+        case '*':
+        cout<<a*b<<endl;
+        break;
+        case '/':
+        cout<<a/b<<endl;
+        break;
+        case '%':
+        cout<<a%b<<endl;
+        break;
+    
+    default:
+        cout<<"invalid operation";
+        break;
+    }
+    return 0;
+}
